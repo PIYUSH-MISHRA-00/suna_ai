@@ -1,11 +1,10 @@
-// Use this sample to create your own voice commands
 intent('hello world', p => {
     p.play('(hello|hi there)');
 });
 
 question(
     'what this app can do?', 'what does this app do?',
-    reply('This is a radio app where you can ask me to play some music.)'),
+    reply('This is a radio app where you can ask me to play some music.'),
 );
 
 
@@ -51,5 +50,5 @@ intent('(play|) next (channel|fm|radio|)', p => {
 
 intent('(play|) previous (channel|fm|radio|)', p => {
     p.play({ "command": "prev" });
-    p.play("(on it|Ok boss|Doing it|sure)");
+    p.play("(on it|Okay|Doing it|sure)");
 });
